@@ -1,0 +1,325 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	display: block;
+}
+
+#container {
+	position: relative;
+}
+
+.canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+a {
+	color: inherit;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+ 
+body::-webkit-scrollbar-track {
+    background: white;
+}
+ 
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+img {
+    max-width: 40%;
+    height: auto;
+    padding: 30px;
+}
+
+
+#personalLink:disabled {
+}
+
+.btnCloseDiaryPad, .btnCloseDiaryView, .btnCloseForm{
+	width: 2.5em;
+	height: 2.5em;
+	right: 5%;
+	display: block;
+	color: black;
+	position: absolute;
+	border: none;
+	background: none;
+	font-size: 1em;
+	cursor: pointer;
+	transition: 0.8s;
+	text-anchor: middle;
+}
+
+.btnCloseDiaryPad:hover, .btnCloseDiaryView:hover, .btnCloseForm:hover {
+	font-size: 120%;
+}
+
+.diaryPad, .form {
+
+	width: 600px; 
+	position: fixed;
+	z-index: 1;
+	opacity: 0;
+	top: 15%;
+	left: 50%;
+	margin-left: -300px;
+	border-radius: 10%;
+	padding-top: 30px;
+	transition: 0.8s;
+}
+
+/*=====================================*/
+/* READ DIARY 1. READ WINDOW */
+/*=====================================*/
+
+.diaryView {
+	height: 600px;
+	width: 600px; 
+	position: fixed;
+	background-color: #7E7E7E;
+	visibility: none;
+	opacity: 0;
+	top: 10%;
+	left: 50%;
+	text-align: center;
+	margin-left: -300px;
+	border-radius: 10%;
+	padding-top: 40px;
+	transition: 0.8s;
+	z-index: 1;
+}
+
+/*=====================================*/
+/* READ DIARY 2. DATE */
+/*=====================================*/
+
+.theDiaryDate {
+	width: 600px;
+	display: inline-block;
+	opacity: 1;
+	z-index: 1;
+	text-align: center;
+	color: white;
+	font-size: 2em;
+	font-family: Yu Gothic Light;
+}
+/*=====================================*/
+/* READ DIARY 3. TEXT AREA */
+/*=====================================*/
+
+#theDiaryViewTXT {
+	font-family: Yu Gothic Light;
+	color: white;
+	display: inline-block;
+	text-align: center;
+	width: 80%;
+	height: 450px;
+	margin-top: 5%;
+	overflow-y: auto;
+}
+
+/*=====================================*/
+/* ACCOUNT WINDOW */
+/*=====================================*/
+
+.form {
+	height: 600px;
+	font-family: Yu Gothic Light;
+	color: black;
+	background-color: #FCFCFC;
+	padding: 16px;
+	text-align: center;
+	visibility: none;
+}
+.title {
+	margin-top: 1em;
+	font-size: 1.5em;
+	font-family: Lucida Calligraphy;
+}
+#signUp, #signIn, #signOut{
+	font-family: yu gothic light;
+	background-color: #536878;
+	display: inline-block;
+	text-align: center;
+	color: white;
+	padding: 14px 20px;
+	margin: 1em 0;
+	border: none;
+	cursor: pointer;
+	width: 30%;
+	border-radius: 1em;
+}
+.imageContainer { 
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+#email, #password {
+	width: 80%;
+	padding: 12px 20px;
+	margin: 1em auto;
+	display: inline-block;
+	font-family: Yu Gothic Light;
+	text-align: center;
+	color: #777777;
+	border-radius: 1em;
+	border: 1.5px solid #1C4670;	
+}
+/*=====================================*/
+/* WRITE DIARY 1. WRITE WINDOW */
+/*=====================================*/
+
+.diaryPad {
+	height: 0px;
+	background-color: #FFFFFF;
+}
+
+/*=====================================*/
+/* WRITE DIARY 2. TEXT AREA */
+/*=====================================*/
+
+.paper {
+
+	width: 80%;
+	height: 400px;
+	padding: 12px 20px; /*self padding inside*/
+	box-sizing: border-box;
+	border: none; 
+	outline: none;
+	display: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
+	border-radius: 4px;	
+	font-size: 16px;
+	overflow-y: auto;
+	background: #FFFFFF;
+	transition: 0.8s;
+	font-family: Yu Gothic Light;
+	opacity: 0;
+	box-shadow:  inset 5px 5px 12px #d9d9d9, inset -5px -5px 12px #ffffff;
+}
+/*=====================================*/
+/* WRITE DIARY 3. DATE */
+/*=====================================*/
+
+.theDate{
+	width: 600px;
+	display: border-box;
+	opacity: 1;
+	z-index: 1;
+	text-align: center;
+	color: black;
+	font-family: yu gothic;
+}
+/*=====================================*/
+/* WRITE DIARY 4. SUBMIT */
+/*=====================================*/
+
+.swim {
+	width: 6em;
+	height: 4em;
+	padding: 0;
+	margin: auto;
+	margin-top: 3%;
+	font-family: yu gothic;
+	box-sizing: border-box;
+	vertical-align:middle;
+	display: block;
+	border: none;
+	cursor: pointer;
+	opacity: 1;
+	text-align: center;
+	color: black;
+	border-radius: 1em;
+	background: linear-gradient(145deg, #e6e6e6, #ffffff);
+	box-shadow:  20px 20px 60px #d9d9d9, 
+	             -20px -20px 60px #ffffff;
+}
+/*=====================================*/
+/* NAVI MENU BUTTON*/
+/*=====================================*/
+.switch {
+	z-index: 1;
+	top: 50%;
+	left: 10px;
+	position: fixed;
+/*	height: 80px;
+	width: 80px;*/
+	font-size: 3em;
+	font-weight: bold;
+	color: #36454F;
+	opacity: 0.7;
+	cursor: pointer;
+	transition: 0.8s;
+}
+
+.switch :hover {
+/*	height: 50%;
+	width: 50%;*/
+	font-size: 1.25em;
+}
+
+.switch :active {
+	color: gray;
+}
+
+/*=====================================*/
+/* NAVI MENU */
+/*=====================================*/
+
+.sideMenu {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    opacity: 0.6;
+    background-color: #FFFFFF; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/* MENU LINK*/
+
+.sideMenu a {
+    padding: 15% 35% 15% 35%;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    vertical-align: center;
+    transition: 0.8s;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Navi Link hover colour */
+
+.sidenav a:hover {
+  font-size: 150%;
+  transition: 0.9s;
+}
+.fa-pencil:hover, .fa-key:hover, .fa-user:hover, .fa-book:hover{
+	color: #6A5ACD;
+	font-size: 2.5em;
+	transition: 0.9s;
+}
+/*=====================================*/
+/* Smaller Screen Change Style */
+/*=====================================*/
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

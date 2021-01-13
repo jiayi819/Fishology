@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1314.38 649.44" style="enable-background:new 0 0 1314.38 649.44;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#Body_1_);}
+	.st1{fill:#808080;}
+	.st2{fill:url(#Fin_1_);}
+</style>
+<linearGradient id="Body_1_" gradientUnits="userSpaceOnUse" x1="386.9839" y1="-64.2939" x2="827.3589" y2="698.4582">
+	<stop  offset="0" style="stop-color:#FF9190"/>
+	<stop  offset="0.2877" style="stop-color:#F4B5A6"/>
+	<stop  offset="0.5659" style="stop-color:#EDD0B7"/>
+	<stop  offset="0.812" style="stop-color:#E8E0C1"/>
+	<stop  offset="1" style="stop-color:#E6E6C5"/>
+</linearGradient>
+<path id="Body" class="st0" d="M1272.54,325.85c0,147.87-196.72,267.73-434.07,267.73c-181.06,0-411.45-69.76-510.54-168.48
+	c-12.06,18.52-27.13,35.94-44.13,50.39c-63.28,53.77-189.63,97.21-236.02,57.79c-46.4-39.42,4.73-146.77,68.01-200.54
+	c2.76-2.35,5.6-4.64,8.54-6.88c-2.94-2.25-5.78-4.55-8.54-6.89C52.51,265.2,11.32,166.29,57.72,126.87
+	c46.39-39.42,162.8-4.43,226.08,49.34c17.11,14.55,32.28,32.1,44.37,50.77C428.24,128.05,661.49,58.12,842.78,58.12
+	C1080.13,58.12,1272.54,177.99,1272.54,325.85z"/>
+<circle id="Eye" class="st1" cx="1028.43" cy="250.63" r="28.09"/>
+<linearGradient id="Fin_1_" gradientUnits="userSpaceOnUse" x1="683.7266" y1="543.376" x2="639.9849" y2="336.815" gradientTransform="matrix(0.4064 0.9137 -0.9137 0.4064 892.8071 -380.1254)">
+	<stop  offset="0" style="stop-color:#FF9190"/>
+	<stop  offset="0.3377" style="stop-color:#F5B2A5"/>
+	<stop  offset="0.7709" style="stop-color:#EAD8BC"/>
+	<stop  offset="1" style="stop-color:#E6E6C5"/>
+</linearGradient>
+<path id="Fin" class="st2" d="M779,498.84c-45.61,20.28-128.15,12.71-148.44-32.9s29.37-111.98,74.98-132.26
+	s99.03,0.25,119.31,45.86C845.14,425.14,824.61,478.56,779,498.84z"/>
+</svg>
