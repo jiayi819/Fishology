@@ -518,7 +518,7 @@ function help(){
 		document.getElementById("theDiaryViewTXT").style.display = "inline-block";
 
 		document.getElementById("diaryDate").innerHTML = "Welcome To Fishology!";
-		document.getElementById("theDiaryViewTXT").innerHTML = "<br><br>1. If a button won't work, click more times.<br>2. Wait until no fish around before clicking a button.<br>3. Log-in in here before add diary.<br><br>Enjoy! : D";	
+		document.getElementById("theDiaryViewTXT").innerHTML = "<br><br>1. If a button won't work, click more times.<br><br>2. Wait until no fish around before clicking a button.<br><br>3. LOG IN in Hall to access personal page.<br><br>4. LOG IN in personal page to write and read diary.<br><br>Enjoy! : D";
 	}
 }
 
