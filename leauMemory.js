@@ -3,7 +3,6 @@
 //////////////////////////////////////////////////////////
 
 var firebaseConfig = {
-
 	apiKey: "AIzaSyDB2PPCBhwd8H3NqY0Kod9eQCIL1-5STbE",
 	authDomain: "maison-de-memoire.firebaseapp.com",
 	databaseURL: "https://maison-de-memoire.firebaseio.com",
@@ -12,7 +11,6 @@ var firebaseConfig = {
 	messagingSenderId: "199263922824",
 	appId: "1:199263922824:web:61a8e1beddc9a86cc08d3d",
 	measurementId: "G-92BXY7MP9J"
-
 };
 	
 firebase.initializeApp(firebaseConfig);
@@ -41,26 +39,14 @@ async function signUp(){
 	}catch (e){
 		alert(e.message);
 	}
-	
-	// promise.catch(e => alert(e.message));
-
-
-
 }
 
 function setTotalFish(){
 
 	var user = firebase.auth().currentUser;
 	var uid = user.uid;
-	// firebase.database().ref(user.uid).set({
-	// 	totalFish: 0,
-	// });
-	// firebase.database().ref(user.uid).child("totalFish").setValue({
-	// 	totalFish: totalDiary,	
-	// });
 	firebase.database().ref(user.uid).child("totalFish").set(totalDiary);
 }
-
 
 //////////////////////////////////////////////////////////
 // SIGN IN
@@ -111,9 +97,9 @@ function signOut(){
 
 
 auth.onAuthStateChanged(function(user){
-
+	var user = firebase.auth().currentUser;
 	if(user){
-
+		uid = user.uid; 
 	}else{
 
 		//no user
